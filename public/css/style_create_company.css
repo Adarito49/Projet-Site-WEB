@@ -1,0 +1,277 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  main {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	padding-top: 140px;
+}
+
+main p {
+  position: absolute;
+  margin-top: 550px;
+  color: black;
+  align-items: center;
+}
+
+body {
+  position: relative;
+  font-family: sans-serif;
+  background: rgb(174,175,176);
+  background: linear-gradient(0deg, rgba(174,175,176,1) 0%, rgba(241,241,241,1) 94%);
+}
+	
+.login-box {
+	width: 90%;
+	max-width: 600px;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: right;
+	background: rgb(249,250,58);
+	background: radial-gradient(circle, rgba(249,250,58,1) 0%, rgba(236,222,6,1) 100%);
+	box-shadow: 0px 0px 5px grey, 0px 0px 10px grey, 0px 0px 15px grey, 0px 0px 20px grey;
+}
+
+.login-box h1 {
+	text-align: 10px;
+	margin-bottom: 50px;
+	margin-top: -30px;
+	color: black;
+}
+
+.company-form{
+	width: 100%;
+}
+.user-box {
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.user-icon {
+  position: relative;
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  margin-right: 5px;
+  margin-bottom: 40px;
+
+}
+
+.login-box a {
+    text-decoration: none;
+    color: #f10d0d;
+    font-size: 14px;
+    margin-left: auto;
+    transition: all 0.3s;
+}
+
+.login-box a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    margin-left: auto;
+    transition: all 0.3s;
+}
+.login-box{
+	width:90%;
+}
+
+.image-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  background-color: #ddd;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50%; 
+  overflow: hidden;
+  margin-top: -60px;
+}
+
+.image-preview img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+input[type="submit"] {
+	background-color: black;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 25px;
+	margin-top: 20px;
+	margin-right: 100px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+input[type="submit"]:hover { 
+	background-color: #FDB813;
+}
+select{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 0;
+    left: -10px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    background: transparent;
+}
+
+.user-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.user-box input[type="text"] {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 0;
+  left: -10px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  outline: none;
+  background: transparent;
+  text-indent: 10px;
+}
+.user-box input[type=number]{
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  left: -10px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  outline: none;
+  background: transparent;
+  text-indent: 10px;
+}
+.user-box label {
+  position: absolute;
+  left: 0;
+  top: -20px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.user-box input[type=text]:focus ~ label,
+.user-box input[type=text].not-empty ~ label {
+  top: -20px;
+  font-size: 12px;
+  color: black; 
+}
+.user-box input[type=number]:focus ~ label,
+.user-box input[type=number].not-empty ~ label {
+  top: -20px;
+  font-size: 12px;
+  color: black; 
+}
+
+
+/* CSS pour l'effet de focus */
+.effect-8 ~ .focus-border:before,
+.effect-8 ~ .focus-border:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000000;
+  transition: 0.3s;
+}
+
+.effect-8 ~ .focus-border:after {
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+}
+
+.effect-8 ~ .focus-border i:before,
+.effect-8 ~ .focus-border i:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 0;
+  background-color: #000000;
+  transition: 1.2s;
+}
+
+.effect-8 ~ .focus-border i:after {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+
+.effect-8:focus ~ .focus-border:before,
+.effect-8:focus ~ .focus-border:after {
+  width: 100%;
+  transition: 1.2s;
+}
+
+.effect-8:focus ~ .focus-border i:before,
+.effect-8:focus ~ .focus-border i:after {
+  height: 100%;
+  transition: 0.4s;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Les règles CSS pour les appareils mobiles */
+  main {
+    padding-top: 100px;
+  }
+
+  .login-box {
+    width: 92%;
+    padding: 20px;
+    border: none;
+  }
+
+  .login-box h1 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: -20px;
+  }
+
+  .user-icon {
+    max-width: 50px;
+    margin-bottom: 20px;
+  }
+
+  .user-box {
+    font-size: 14px;
+  }
+
+  input[type="submit"] {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+  .image-preview {
+    width: 60px;
+    height: 60px;
+    margin-top: -50px;
+  }
+  #file-input{
+    width: 60%;
+    font-size: 13px;
+    white-space: pre-wrap;
+  } 
+}

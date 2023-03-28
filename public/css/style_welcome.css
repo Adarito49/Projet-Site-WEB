@@ -1,0 +1,227 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: rgb(174,175,176);
+	background: linear-gradient(0deg, rgba(174,175,176,1) 0%, rgba(241,241,241,1) 94%);
+	font-family: sans-serif;
+}
+
+header img {
+	width: 100%;
+	max-width: 231px;
+	height: auto;
+	transition: all 0.3s ease-in-out;
+}
+
+header.small {
+  height: 60px;
+  transition: all 0.3s ease-in-out;
+}
+
+header.small img {
+  max-width: 150px;
+  transition: all 0.3s ease-in-out;
+}
+
+main {
+	margin-top: 110px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: calc(100vh - 110px);
+}
+
+main p {
+  position: absolute;
+  margin-top: 550px;
+  color: black;
+  align-items: center;
+}
+
+.login-box {
+	width: 30%; 
+	max-width: 600px;
+	padding: 50px;
+	background: rgb(249,250,58);
+	background: radial-gradient(circle, rgba(249,250,58,1) 0%, rgba(236,222,6,1) 100%);
+	box-shadow: 0px 0px 5px grey, 0px 0px 10px grey, 0px 0px 5px grey, 0px 0px 5px grey;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: right;
+}
+
+.login-box h1 {
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: -30px;
+	color: black;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.user-box {
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.user-box label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 15px;
+	color: #000000;
+	transition: all 0.3s;
+	pointer-events: none;
+	text-align: center;
+}
+
+.user-box input {
+	width: 100%;
+	padding: 10px 100px;
+	font-size: 14px;
+	color: #333;
+	border: none;
+	border-bottom: 1px solid #000000;
+	outline: none;
+	background: transparent;
+}
+.user-box input [type=text]{
+	resize: none;
+
+}
+
+.user-box input:focus ~ label {
+	top: 10px;
+	left: 0px;
+	color: #000000;
+	font-size: 12px;
+}
+.light-message{
+	font-weight: lighter;
+	margin-bottom: -10px;
+	font-size: 20px;
+}
+input[type="submit"] {
+	background-color: black;
+	color: #fff;
+	border: none;
+	padding: 15px 20px;
+	font-size: 25px;
+	margin-top: 20px;
+	margin-right: 100px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+input[type="submit"]:hover {
+	background-color: #c58e0c;
+}
+
+.user-icon {
+  position: relative;
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  margin-right: 20px;
+  margin-bottom: 40px;
+
+}
+
+.login-box a {
+	margin-right: 30%;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.login-box a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    margin-left: auto;
+    transition: all 0.3s;
+}
+.register-link{
+	text-align: center;
+	font-size: 16px;
+  }
+.form-mdp .user-box{
+	width: 80%;
+	margin-left: 10%;
+}
+#mdp-title{
+	font-size: 25px;
+  }
+/*Media Query*/
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .login-box {
+	width: 90%;
+	margin-top: -40%;
+  }
+
+  .login-box h1{
+	white-space: nowrap;
+	font-size: 23px;
+	margin-top: 0px;
+  }
+  .invalid-feedback{
+	white-space: nowrap;
+	font-size: 13px;
+  }
+  input[type=submit]{
+	padding: 4%;
+	font-size: 18px;
+	margin-left: 26%;
+	margin-right: 30%;
+  }
+  .login-box a{
+	margin-left: 23%;
+	margin-right: 32%;
+	font-size: 15px;
+	white-space: nowrap;
+  }
+  .register-link{
+	text-align: center;
+	font-size: 14px;
+  }
+  .form-mdp .user-box{
+	width: 100%;
+	margin-left: 2%;
+  }
+  #mdp-title{
+    font-size: 20px;
+  }
+  #mdp-reset-button,#send-email-button {
+	width: 102%;
+	margin-left: 0%;
+	font-size: 1.05rem;
+  }
+  #main-mdp-reset {
+	margin-top: 20px;
+	width: 100%;
+}
+  #login-box-mdp{
+	width: 80%;
+}
+
+}
+.form-control.is-invalid {
+  border-color: #dc3545; /* Couleur de bordure */
+  padding-right: calc(1.5em + .75rem); /* Espacement à droite pour le message d'erreur */
+  background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="%23dc3545"%3e%3cpath d="M11.354 10.354l-4-4L6 7.586l-1.354-1.354-4 4L1.414 11l4-4L2.414 5.414 6 1.828l3.586 3.586L10.586 5l-4 4z"/%3e%3c/svg%3e'); /* Icone d'erreur */
+  background-repeat: no-repeat;
+  background-position: center right calc(.375em + .1875rem); /* Position de l'icone d'erreur */
+  background-size: calc(.75em + .375rem) calc(.75em + .375rem); /* Taille de l'icone d'erreur */
+}

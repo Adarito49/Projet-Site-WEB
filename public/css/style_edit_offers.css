@@ -1,0 +1,200 @@
+body {
+    font-family: sans-serif;
+    padding-top: calc(2rem + 120px);
+    background: linear-gradient(0deg, rgba(174, 175, 176, 1) 0%, rgba(241, 241, 241, 1) 94%);
+}
+
+.hide {
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.form-container {
+    flex: 1;
+    width: 100%;
+    margin-right: 2rem;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.table-container {
+    flex: 2;
+    overflow-y: scroll;
+    background-color: #ffffff;
+    max-height: 600px;
+    width: 500px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 2px solid grey;
+    box-shadow: 0px 0px 5px grey, 0px 0px 10px grey, 0px 0px 15px grey, 0px 0px 20px grey;
+    padding: 20px;
+}
+
+.edit-offer-box {
+    width: 300px;
+    padding: 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 5px grey, 0px 0px 10px grey, 0px 0px 15px grey, 0px 0px 20px grey;
+}
+
+.edit-offer-box h1 {
+    text-align: 10px;
+    margin-bottom: 50px;
+    margin-top: -30px;
+    color: black;
+}
+
+.message {
+    display: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.table-container td,
+th {
+    text-align: center;
+    font-size: 13px;
+    padding: 20px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.flat-btn {
+    background-color: #f4c14f;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.flat-btn:hover {
+    background-color: #e5ac3c;
+}
+
+@media (max-width: 767px) {
+    body {
+        padding: 1rem;
+        padding-top: 20%;
+    }
+
+    .form-container {
+        order: 2;
+        width: 100%;
+        margin-right: 0;
+        flex: none;
+    }
+
+    .table-container {
+        width: 100%;
+        order: 1;
+        flex: none;
+    }
+
+    .table-container h1 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .table-container label {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .table-container td,
+    th {
+        text-align: center;
+        font-size: 14px;
+        padding: 2px;
+    }
+
+    .edit-offer-box {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .edit-offer-box h1 {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+    }
+
+    input[type=file] {
+        width: 100%;
+        font-size: 10px;
+    }
+    .flat-btn{
+        margin-right: 26%;
+    }
+}

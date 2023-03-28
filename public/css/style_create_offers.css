@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  main {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	padding-top: 140px;
+}
+
+main p {
+  position: absolute;
+  margin-top: 550px;
+  color: black;
+  align-items: center;
+}
+
+  body {
+	position: relative;
+	font-family: sans-serif;
+	background: rgb(174,175,176);
+	background: linear-gradient(0deg, rgba(174,175,176,1) 0%, rgba(241,241,241,1) 94%);
+  }
+	
+ .login-box {
+	width: 90%;
+  max-width: 600px;
+	padding: 50px;
+  background: rgb(249,250,58);
+	background: radial-gradient(circle, rgba(249,250,58,1) 0%, rgba(236,222,6,1) 100%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: right;
+	box-shadow: 0px 0px 5px grey, 0px 0px 10px grey, 0px 0px 15px grey, 0px 0px 20px grey;
+}
+
+.login-box h1 {
+	text-align: 10px;
+	margin-bottom: 50px;
+	margin-top: -30px;
+	color: black;
+}
+
+.user-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.user-box input[type="text"], #type-input, #company-name-input {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 0;
+  left: -10px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  outline: none;
+  background: transparent;
+  text-indent: 10px;
+}
+.user-box input[type=number] {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 0;
+  left: -10px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  outline: none;
+  background: transparent;
+  text-indent: 10px;
+}
+.user-box input[type=email] {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 0;
+  left: -10px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  outline: none;
+  background: transparent;
+  text-indent: 10px;
+}
+select{
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 0;
+  left: -10px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  outline: none;
+  background: transparent;
+  text-indent: 10px;
+}
+option{
+  color:black;
+}
+.user-box label {
+  position: absolute;
+  left: 0;
+  top: -20px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.user-box input[type="text"]:focus ~ label,
+.user-box input[type="text"].not-empty ~ label {
+  top: -20px;
+  font-size: 12px;
+  color: black; 
+}
+
+/* CSS pour l'effet de focus */
+.effect-8 ~ .focus-border:before,
+.effect-8 ~ .focus-border:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000000;
+  transition: 0.3s;
+}
+
+.effect-8 ~ .focus-border:after {
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+}
+
+.effect-8 ~ .focus-border i:before,
+.effect-8 ~ .focus-border i:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 0;
+  background-color: #000000;
+  transition: 1.2s;
+}
+
+.effect-8 ~ .focus-border i:after {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+
+.effect-8:focus ~ .focus-border:before,
+.effect-8:focus ~ .focus-border:after {
+  width: 100%;
+  transition: 1.2s;
+}
+
+.effect-8:focus ~ .focus-border i:before,
+.effect-8:focus ~ .focus-border i:after {
+  height: 100%;
+  transition: 0.4s;
+}
+
+.user-icon {
+  position: relative;
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  margin-right: 20px;
+  margin-bottom: 40px;
+
+}
+
+.login-box a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    margin-left: auto;
+    transition: all 0.3s;
+} 
+
+.image-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  background-color: #ddd;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50%; 
+  overflow: hidden;
+  margin-top: -60px;
+}
+
+.image-preview img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+input[type="submit"] {
+	background-color: black;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 25px;
+	margin-top: 20px;
+	margin-right: 100px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+input[type="submit"]:hover {
+	background-color: #FDB813;
+}
+form{
+  width: 100%;
+}
+#company-logo-preview {
+  max-width: 85px;
+  max-height: 85px;
+  margin-right: 10px;
+}
+
+#company-logo-preview:not([src]) {
+  background-color: #ccc;
+}
+
+.select-container {
+  width: 100%;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.select-container2 {
+  position: relative;
+  align-items: center;
+  text-align: left;
+}
+
+#company-name-input {
+  width: 100%;
+}
+
+#company-name-input:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+#company-name-input::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+#company-name-input:-moz-placeholder { /* Firefox 18- */
+  color: #ccc;  
+}
+
+#type-input:focus {
+  outline: none;
+  border-color: #4e73df;
+}
+
+#type-input::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+#type-input:-moz-placeholder { /* Firefox 18- */
+  color: #ccc;  
+}
+
+#company-logo-preview {
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    padding-top: 100px;
+  }
+  .login-box {
+    width: 100%;
+    padding: 20px;
+    border: none;
+  }
+  
+  .login-box h1 {
+    font-size: 20px;
+    margin-bottom: 50px;
+    margin-top: -20px;
+    }  
+
+  .user-icon {
+    max-width: 50px;
+    margin-bottom: 20px;
+  }
+
+  .user-box {
+    font-size: 14px;
+  }
+  form{
+    width:90%;
+  }
+
+  input[type="submit"] {
+    font-size: 20px;
+    margin-top: 10px;
+    align-self: center;
+  }
+
+  .select-container {
+    width: 100%;
+  }
+  #company-logo-preview {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  .select-container2  {
+    width: 100%;
+    text-align: left;
+  }
+  #type-input{
+    width: 100%;
+    text-align: left;
+    margin-left: 0px;
+}
+}

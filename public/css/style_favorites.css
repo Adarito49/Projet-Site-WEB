@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: rgb(174, 175, 176);
+    margin-top: 150px;
+    background: linear-gradient(0deg, rgba(174, 175, 176, 1) 0%, rgba(241, 241, 241, 1) 94%);
+    background-size: cover;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-md-4 {
+    width: 33.33333%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.my-4 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.company-logo {
+    max-width: 100px;
+	width: 100px;
+	height: 100px;
+    max-height: 100px;
+    margin-top: 20px;
+}
+
+.company-container {
+    position: flex;
+    margin-bottom: 30px;
+}
+
+.card {
+    display: flex;
+	height: 300px;
+    background-color: white;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(0.98);
+}
+
+
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body p{
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align:center;
+}
+.offer-item {
+    width: 100%;
+    height: 330px;
+}
+
+#company-underline{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .main-content{
+        margin-top : -50px;
+    }
+    .my-4{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .card-title{
+        font-size: 0.82rem;
+        text-align: center;
+    }
+    .btn-primary {
+        font-weight: 400;
+        width: 100%;
+        font-size: 0.64rem;
+        margin-left: 0;
+    }
+    .offer-item {
+        width: 100%;
+        height: 330px;
+    }
+    .col-md-4 {
+        width: 50%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin-left: 11%;
+    }
+
+    .align-items-center{
+        margin-bottom : 1rem;
+    }
+
+    .card-body p{
+        font-size: 0.9rem;
+    }
+    
+}

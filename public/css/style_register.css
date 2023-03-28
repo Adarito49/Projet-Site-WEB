@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	background-color: #f2f2f2;
+	font-family: sans-serif;
+	background: rgb(174,175,176);
+	background: linear-gradient(0deg, rgba(174,175,176,1) 0%, rgba(241,241,241,1) 94%);
+}
+
+main {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	padding-top: 140px;
+}
+
+main p {
+  position: absolute;
+  margin-top: 550px;
+  color: black;
+  align-items: center;
+}
+
+
+.login-box {
+	width: 90%;
+	max-width: 600px;
+	padding: 50px;
+	background-color: #ffffff;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: right;
+	border: 2px solid grey;
+	box-shadow: 0px 0px 5px grey, 0px 0px 10px grey, 0px 0px 15px grey, 0px 0px 20px grey;
+}
+
+.login-box h1 {
+	text-align: 10px;
+	margin-bottom: 50px;
+	margin-top: -30px;
+	color: black;
+}
+
+.user-box {
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.user-box label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 15px;
+	color: #000000;
+	transition: all 0.3s;
+	pointer-events: none;
+}
+
+.user-box input {
+	width: 100%;
+	padding: 10px 100px;
+	color: #000000;
+	border: none;
+	border-bottom: 1px solid #000000;
+	outline: none;
+	background: transparent;
+}
+.user-box input[type=text]{
+	font-size: 14px;
+}
+.user-box input:focus ~ label {
+	top: 10px;
+	left: 0px;
+	color: #000000;
+	font-size: 12px;
+}
+
+input[type="submit"] {
+	background-color: black;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 25px;
+	margin-top: 20px;
+	margin-right: 100px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+input[type="submit"]:hover {
+	background-color: #FDB813;
+}
+
+.user-icon {
+  position: relative;
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  margin-right: 20px;
+  margin-bottom: 40px;
+
+}
+
+.login-box a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    margin-left: auto;
+    transition: all 0.3s;
+}
+
+.login-box a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    margin-left: auto;
+    transition: all 0.3s;
+}
+.image-preview {
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ddd;
+	margin-top: -65px;
+	margin-bottom: 20px;
+}
+.image-preview img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+}
+
+.form-control.is-invalid {
+  border-color: #dc3545; /* Couleur de bordure */
+  padding-right: calc(1.5em + .75rem); /* Espacement à droite pour le message d'erreur */
+  background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="%23dc3545"%3e%3cpath d="M11.354 10.354l-4-4L6 7.586l-1.354-1.354-4 4L1.414 11l4-4L2.414 5.414 6 1.828l3.586 3.586L10.586 5l-4 4z"/%3e%3c/svg%3e'); /* Icone d'erreur */
+  background-repeat: no-repeat;
+  background-position: center right calc(.375em + .1875rem); /* Position de l'icone d'erreur */
+  background-size: calc(.75em + .375rem) calc(.75em + .375rem); /* Taille de l'icone d'erreur */
+}
